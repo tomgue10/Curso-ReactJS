@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Crash A custom 16'",
+    "id": 1,
+    "price": 295,
+    "brand": "zildjian",
+    "info": "The Zildjian A Custom 16' crash cymbal is the perfect choice when you need a crash that has a natural sound that's not too high and not too low. This cymbal features beautiful warm overtones and speaks very quickly. The A Custom 16' crash cymbal is a thin cymbal finished in a brilliant finish to add a classic look to your kit along with premium sound. Zildjian is a premium cymbal brand with a history running back over 380 years. Add the legacy of Zildjian to your kit with the A Custom 16' crash",
+    "img": "https://www.samash.com/media/catalog/product/u/n/untitled-1_57_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1200&width=1200&canvas=1200:1200",
+    "category": "platillos"
+  },
+  {
+    "name": "Pearl Roadshow 5-piece - Jet Black",
+    "id": 2,
+    "price": 660,
+    "brand": "pearl",
+    "info": "6-ply poplar shells (depth x diameter): 16-inch x 22-inch bass drum, 5.5-inch x 14-inch snare drum, 8-inch x 10-inch and 9-inch x 12-inch rack toms, and a 16-inch x 16-inch floor tom",
+    "img": "https://media.sweetwater.com/m/products/image/0e0eacd3car4tmdLmb752dm1WgutZvziElfhO3Bv.png?quality=82&width=750&ha=0e0eacd3cab053cb",
+    "category": "baterias"
+  },
+  {
+    "name": "DW 9000 Series Double Bass Drum Pedal",
+    "id": 3,
+    "price": 800,
+    "brand": "dw",
+    "info": "With DW's 9002 double kick drum pedal, you get all the things that made the 9002 Series so popular among drummers worldwide, plus new goodies like DW's Tri-Pivot toe clamp system, a non-slip rubber grip base plate, and the new EZ Adjust cam that lets you morph between Accelerator and Turbo drive.",
+    "img": "https://media.sweetwater.com/m/products/image/9bb0a5b74dE5fM0S6xk1ySxcvxfKxDsi627SsEsO.jpg?quality=82&width=750&ha=9bb0a5b74d7729bf",
+    "category": "hardware"
+  }
+]

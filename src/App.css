@@ -48,3 +48,37 @@
 #containerWidget {
   padding-top: 3rem;
 }
+
+.cardTitle {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.cardPrice {
+  color: rgb(251, 8, 0);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.detailTitle {
+  text-align: start;
+  font-weight: 600;
+  border-bottom: solid 2px #d8d7d7;
+}
+
+.itemDetail {
+  text-align: start;
+  padding: 1rem;
+}
+
+.itemPrice {
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+  border-radius: 25px;
+}
+
+.imgDetail {
+  max-height: 600px;
+}
