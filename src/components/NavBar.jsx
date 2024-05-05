@@ -14,11 +14,11 @@ export const NavBar = () => {
             SOULKING
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link to="/category/baterias" as={NavLink}>
-              Baterias
+            <Nav.Link to="/category/drums" as={NavLink}>
+              Drums
             </Nav.Link>
-            <Nav.Link to="/category/platillos" as={NavLink}>
-              Platillos
+            <Nav.Link to="/category/cymbals" as={NavLink}>
+              Cymbals
             </Nav.Link>
             <Nav.Link to="/category/hardware" as={NavLink}>
               Hardware
