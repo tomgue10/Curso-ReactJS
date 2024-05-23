@@ -12,10 +12,11 @@ const initialValues = {
 
 export const Cart = () => {
   const [values, setValues] = useState(initialValues);
-  const { clear, items } = useContext(CartContext);
-  const total = () => {
-    items.reduce((acc, item) => acc + item.quantity * item.price);
-  };
+  const { removeItem, clear, items } = useContext(CartContext);
+
+  const total = () =>
+    items.reduce((acc, item) => acc + item.quantity * item.price, 0);
+
   const handleChange = (ev) => {
     setValues((prev) => {
       return {
@@ -45,45 +46,53 @@ export const Cart = () => {
         setValues(initialValues);
       });
   };
+
+  const handleRemove = (id) => removeItem(id);
+  const handleClear = () => clear();
+
   return (
     <Container className="mt-4">
       <h1>productos</h1>
       {items.map((i) => {
         return (
           <ul key={i.name}>
-            <li>{i.name}</li>
-            <li>{i.price}</li>
-            <li>{i.quantity}</li>
+            <li>producto: {i.name}</li>
+            <li>$ {i.price}</li>
+            <li>cantidad:{i.quantity}</li>
+            <li onClick={() => handleRemove(i.id)}>X</li>
           </ul>
         );
       })}
-      <div>TOTAL: ${total}</div>
-      <form>
-        <label>Nombre</label>
-        <input
-          type="text"
-          value={values.name}
-          name="name"
-          onChange={handleChange}
-        />
-        <label>Celular</label>
-        <input
-          type="text"
-          value={values.celular}
-          name="phone"
-          onChange={handleChange}
-        />
-        <label>Mail</label>
-        <input
-          type="email"
-          value={values.email}
-          name="email"
-          onChange={handleChange}
-        />
-        <button type="button" onClick={handleSubmit}>
-          ENVIAR
-        </button>
-      </form>
+      <div>TOTAL: ${total()}</div>
+      <button onClick={handleClear}>VACIAR</button>
+      {items?.length > 0 && (
+        <form>
+          <label>Nombre</label>
+          <input
+            type="text"
+            value={values.name}
+            name="name"
+            onChange={handleChange}
+          />
+          <label>Celular</label>
+          <input
+            type="text"
+            value={values.celular}
+            name="phone"
+            onChange={handleChange}
+          />
+          <label>Mail</label>
+          <input
+            type="email"
+            value={values.email}
+            name="email"
+            onChange={handleChange}
+          />
+          <button type="button" onClick={handleSubmit}>
+            ENVIAR
+          </button>
+        </form>
+      )}
     </Container>
   );
 };

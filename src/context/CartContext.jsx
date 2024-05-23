@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import { Item } from "../components/Item";
 
 export const CartContext = createContext();
 
@@ -19,21 +18,22 @@ export const Provider = ({ children }) => {
     if (isExists) {
       const updateItems = items.map((i) => {
         if (i.id === item.id) {
-          return { ...i, quantity: i.quantity + quantity };
+          return {
+            ...i,
+            quantity: i.quantity + quantity,
+          };
         } else {
           return i;
         }
       });
       setItems(updateItems);
     } else {
-      setItems([...items, { item, quantity }]);
-      console.log(items);
+      setItems([...items, { ...item, quantity }]);
     }
   };
-
   return (
     <CartContext.Provider value={{ addItem, removeItem, clear, items }}>
-      {children}{" "}
+      {children}
     </CartContext.Provider>
   );
 };

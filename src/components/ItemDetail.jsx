@@ -2,10 +2,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { CartContext } from "../context/CartContext";
-import { useContext } from "react";
 
+import { useContext } from "react";
 import { ItemCount } from "./ItemCount";
+import { CartContext } from "../context/CartContext";
 
 export const ItemDetail = ({ product }) => {
   const { addItem } = useContext(CartContext);

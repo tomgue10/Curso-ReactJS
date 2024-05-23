@@ -23,7 +23,7 @@ export const ItemCount = ({ onAdd, stock }) => {
       >
         -
       </div>
-      <input type="number" value={count} />
+      <input type="number" value={count} readOnly />
       <div
         style={{ padding: "0 12px", color: "orange", fontWeight: 900 }}
         onClick={handleIncrease}
